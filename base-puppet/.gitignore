@@ -1,0 +1,10 @@
+*.sw*
+.librarian
+modules/
+.tmp
+tmp/
+*.lock
+spec/fixtures/
+.bundle
+.vagrant*
+.ruby-*

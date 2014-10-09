@@ -1,0 +1,41 @@
+#cloud-config
+puppet:
+  conf:
+    agent:
+      server: "ip-10-0-0-10.ec2.internal"
+      certname: "%i.%f"
+    # The puppmaster ca certificate will be available in
+    # /var/lib/puppet/ssl/certs/ca.pem
+    ca_cert: |
+      -----BEGIN CERTIFICATE-----
+      MIIFkzCCA3ugAwIBAgIBATANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDDCRQdXBw
+      ZXQgQ0E6IGlwLTEwLTAtMC0xMC5lYzIuaW50ZXJuYWwwHhcNMTQxMDA4MDA1NjEw
+      WhcNMTkxMDA4MDA1NjEwWjAvMS0wKwYDVQQDDCRQdXBwZXQgQ0E6IGlwLTEwLTAt
+      MC0xMC5lYzIuaW50ZXJuYWwwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoIC
+      AQCBnWeneVx3dgFII47eQ2sXrYqfSYUtY8Bji6mUs0vewBU3cEI97Lk93bYshAbf
+      3QxsvNRxLHqiCU2rhnoQ4JNlIkSKaKJOYynixdSSwXM73z47ysa5PMSV0EUKjQ5j
+      94vDwjXyxhilXkTahsfuHfkK6PTEzXCHYwVo2brvBk5ePc1qCwlpIiMsFZp4ZbWs
+      SZICek6B/iyT0yjM4JCkXbssJwxzF4gKV9WktNsr7DYsm63kvEmEVM0c14mNVp+C
+      9lF4PjLAyBf+ayJGdaBIvDEBrLsdRNICZf+DTWtaJ29ssLDW98kd/zRAuS5wY9lQ
+      BDBae6BY5LkOgG9z5yzsZahBCy9mHVQEpPrrs5mSaYz7xIjYAHMG3WAkSvafv8Yc
+      nIrOAbDCsW3q/gTXn7/B/aUtdp9XXom7fWjB8X0CrowFB2f0RaGmw3AdlCNzJG1V
+      bWN19f+Cii7ptaRuc1pNOemvrjFteABq1mkiz/1XzSpzcnqujJkk0NRoZr843Mqx
+      htJrKe6calZl8DwXGXWEWVfizDG0kVyqSHxPuLEbnUkdwvBZaiWPlZM/Tusul1+9
+      hns7FEX+Ky7f5CGssJsvLxyr4UwdJxO/gazuYU6KLIs8hmbCOY6eMukqCDw100NO
+      AH7no/O/z40Aw8CzvwgOU1UMGp03j67NAK2PomV2D1DpVQIDAQABo4G5MIG2MDEG
+      CWCGSAGG+EIBDQQkFiJQdXBwZXQgU2VydmVyIEludGVybmFsIENlcnRpZmljYXRl
+      MEEGA1UdIwQ6MDihM6QxMC8xLTArBgNVBAMMJFB1cHBldCBDQTogaXAtMTAtMC0w
+      LTEwLmVjMi5pbnRlcm5hbIIBATAdBgNVHQ4EFgQUDsp/rpxM0Exv45qoeD+3zHSC
+      sQIwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwDQYJKoZIhvcNAQEL
+      BQADggIBACnuik9RcpiYrtATCOUDncVtuTziOSUzuewEgt0NrayKaJrG9BpiqKa0
+      fiomrkFJsZqvLkzxEYEHcwYD5EzyVPbke0jknMov/3stDWPLBSNVoTLWGf3itheo
+      r0r3RwCxqrIzt8tD/TGQZ6/kHz5XCkZ1cAi6fVweJ1obhye4rubRCz1gqQcpPyUG
+      RZFi0BWyOPxd9LD3Dyv/p5ufQ7/QRI8xD9eSXo0GA1Hlo1vQT1xGUCqtXUQbnNe4
+      KbNIXl0sh1hzPHj0+sn9NuRRyOnWnC6Y523f4rBR5DeMSwJYjWDEoW8lUAuVlhlH
+      MFFtnS1F0cIKD6ZQdvvYt/UIC+qMAL2QBmRU8mWL7KvGbN0AqDeZSwW9awtG6/2q
+      twaR7TTirwqBzCCsnbu5iluqare3EOnjcTNfzSVTnIwGlBaJhjO8Rfnci0+/1m69
+      Ey6h6L277N6VY0kwngt/kddqh2+AKMamdf5pOfMQ+zik7p8bx7hhnZFZw8UZe4D6
+      tLV7hXWz4yUZ2hclTL2CZX7qMAO50v3G5DcKVvFNUJgU0sWuZt5E0iU98m30ASqQ
+      qGmtOsmThcF/OwzbiFnOJDaf+oOtQko+IPmgDm4JofdTLNiu6DhOmgNCsvClxe7w
+      Mt2/9P0oVQ4wxXn7vDXQoiKEb7Zlj1S+ECRk8/qOepczBkWkh30v
+      -----END CERTIFICATE-----
