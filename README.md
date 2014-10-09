@@ -9,6 +9,10 @@ variables.
 
 You'll also need the SSH keypair you plan on using stored in `AWS_KEYPAIR_NAME`.
 
+You'll need to change the subnet ID, security group, and ami in 
+master/Vagrantfile and in nodes/compute.tf before things will work reliably
+too.
+
 Running the example in AWS will incur some cost. It should be fairly easy to
 convert everything so that it runs entirely in Vagrant + VirtualBox.
 
